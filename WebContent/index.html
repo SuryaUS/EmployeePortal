@@ -3,22 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <title>EmployeePortal</title>
-        <script type="text/javascript" src="./app/angular.min.js"></script>
-        <script type="text/javascript" src="./app/angular-route.min.js"></script>
+
+        <link href="./app/css/main.css" rel="stylesheet" />
+        <script type="text/javascript" src="./app/Shared/angular.min.js"></script>
+        <script type="text/javascript" src="./app/Shared/angular-route.min.js"></script>
         <script type="text/javascript" src="./app/app.js"></script>
-        <script type="text/javascript" src="./app/controller/DashboardController.js"></script>
-        <script type="text/javascript" src="./app/controller/UserController.js"></script>
         <script type="text/javascript" src="./app/config.js"></script>
+        
+     <!-- Controllers --> 
+        <script type="text/javascript" src="./app/controller/DashboardController.js"></script>
+        <script type="text/javascript" src="./app/controller/UserController.js"></script> 
+               
+      <!--Services  -->      
         <script type="text/javascript" src="./app/services/UserService.js"></script>
+        
+     <!-- Directives -->
+        <script type="text/javascript" src="./app/controller/Header.js"></script>
+        <script type="text/javascript" src="./app/controller/Footer.js"></script>
+   
       
 </head>
 <body ng-app="empModule">
-<div>
-<ul>
-     <li><a href="#Dashboard"> Dashboard </a></li>
-     <li><a href="#UserManagement"> UserManagement </a></li>
-</ul>
-</div>
-    <ng-view></ng-view> 
+
+    <div class ="header" header ></div>
+          
+        <div>
+               <a href="#Dashboard"> Dashboard </a>   
+               <a href="#UserManagement"> UserManagement </a>
+         </div>
+      
+        <div align="center">
+          <ng-view></ng-view> 
+       </div>
+      
+  <div class ="footer" footer></div>
+   
 </body>
 </html>
