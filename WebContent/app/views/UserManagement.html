@@ -2,9 +2,26 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>User Details</title>
 </head>
 <body>
+<table border="1">
+<tr>
+ <strong>Employee Details </strong>
+</tr>
+<tr>
+<td>Name</td>
+<td>Emp-Id</td>
+<td>Age</td>
+<td>Designation</td>
+</tr>
+<tr ng-repeat="emp in empDetails">
+<td> {{ emp.name }}</td>
+<td> {{ emp.empId }}</td>
+<td> {{ emp.age }}</td>
+<td> {{ emp.designation }}</td>
+</tr>
+</table>
 
 </body>
 </html>

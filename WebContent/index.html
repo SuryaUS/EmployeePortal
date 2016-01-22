@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EmployeePortal</title>
+        <script type="text/javascript" src="./app/angular.min.js"></script>
+        <script type="text/javascript" src="./app/angular-route.min.js"></script>
+        <script type="text/javascript" src="./app/app.js"></script>
+        <script type="text/javascript" src="./app/controller/DashboardController.js"></script>
+        <script type="text/javascript" src="./app/controller/UserController.js"></script>
+        <script type="text/javascript" src="./app/config.js"></script>
+        <script type="text/javascript" src="./app/services/UserService.js"></script>
+      
+</head>
+<body ng-app="empModule">
+<div>
+<ul>
+     <li><a href="#Dashboard"> Dashboard </a></li>
+     <li><a href="#UserManagement"> UserManagement </a></li>
+</ul>
+</div>
+    <ng-view></ng-view> 
+</body>
+</html>
